@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.header {
+    background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.5) 40%, rgba(28, 28, 28, 0.4)),
+    url('./img/eggs.jpg') center / cover;
+    color: #ffffff;
+    letter-spacing: 2px;
+    padding: 50px 0;
+}
+
+.header__logo {
+    margin-bottom: 15px;
+}
+
+.header__top {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header__nav a {
+    font-size: 14px;
+    margin: 0 5px;
+    border: transparent solid 1px;
+    padding: 8px 5px;
+    transition: 0.3s;
+}
+
+.header__nav a:hover {
+    border: #c89446 solid 1px;
+    padding: 8px 5px;
+}
+
+.header__contents {
+    margin-top: 70px;
+    text-align: center;
+    letter-spacing: 5px
+}
+
+.header__contents p:first-child{
+    font-family: 'Pinyon Script', 'serif';
+    color: #c89446;
+    font-size: 40px;
+}
+
+.header__contents h1 {
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.header__contents p:last-child{
+    text-transform: uppercase;
+}
+
+@media ( min-width:920px) {
+    .header__top {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 70px;
+        align-items: center;
+    }
+
+    .header__logo{
+        margin: 0;
+    }
+
+    .header__contents {
+        padding: 100px 0 120px;
+    }
+
+    .header__contents p:first-child{
+        font-size: 60px;
+    }
+
+    .header__contents h1 {
+        font-size: 60px;
+    }
+}
