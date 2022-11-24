@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 
+:root {
+    --white-color:#fff;
+    --main-color:#c89446;
+    --main-font-family: 'Pinyon Script', 'serif';
+}
+
 *, ::after, ::before {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {
@@ -16,13 +26,19 @@ a {
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* HEADER */
 
 .header {
     background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.5) 40%, rgba(28, 28, 28, 0.4)),
     url('./img/eggs.jpg') center / cover;
-    color: #ffffff;
+    color: var(--white-color);
     letter-spacing: 2px;
     padding: 50px 0;
 }
@@ -37,7 +53,7 @@ a {
 }
 
 .header__nav a {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin: 0 5px;
     border: transparent solid 1px;
     padding: 8px 5px;
@@ -45,30 +61,29 @@ a {
 }
 
 .header__nav a:hover {
-    border: #c89446 solid 1px;
-    padding: 8px 5px;
+    border: var(--main-color) solid 1px;
 }
 
-.header__contents {
+.header__body {
     margin-top: 70px;
     text-align: center;
-    letter-spacing: 5px
+    letter-spacing: 0.31rem;
 }
 
-.header__contents p:first-child{
-    font-family: 'Pinyon Script', 'serif';
-    color: #c89446;
-    font-size: 40px;
+.header__body p:first-child{
+    font-family:var(--main-font-family);
+    color: var(--main-color);
+    font-size: 2.5rem;
 }
 
-.header__contents h1 {
+.header__body h1 {
     text-transform: uppercase;
-    font-size: 34px;
+    font-size: 2.125rem;
     font-weight: 900;
     margin-bottom: 20px;
 }
 
-.header__contents p:last-child{
+.header__body p:last-child{
     text-transform: uppercase;
 }
 
@@ -79,20 +94,119 @@ a {
         padding: 0 70px;
         align-items: center;
     }
-
     .header__logo{
         margin: 0;
     }
-
-    .header__contents {
+    .header__body {
         padding: 100px 0 120px;
     }
+    .header__body p:first-child{
+        font-size: 4.375rem;
+    }
+    .header__body h1 {
+        font-size: 3.75rem;
+    }
+}
 
-    .header__contents p:first-child{
-        font-size: 60px;
+/* MAIN */
+
+.main {
+    padding: 30px 20px;
+    background: fixed url('./img/spices.jpg') no-repeat left 0 top 0;
+}
+
+.article {
+    max-width: 940px;
+}
+
+.img__border{
+    max-width: 352px;
+    border: var(--main-color) 1px solid;
+    margin: auto;
+}
+
+.article__body {
+    margin: 15px 0;
+}
+
+.article__body h2::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.article__body h2 {
+    color: var(--main-color);
+    font-family: var(--main-font-family);
+    font-size: 2.8rem;
+}
+
+.article__body h3 {
+    text-transform: uppercase;
+    font-size: 1.06rem;
+}
+
+.article__body p {
+    margin: 20px 0;
+}
+
+.see__more {
+    color: var(--main-color);
+    border: transparent 1px solid;
+    padding: 5px;
+}
+
+.see__more::after {
+    content: "〉";
+    padding-left: 10px;
+}
+.see__more:hover {
+    border: var(--main-color) 1px solid;
+}
+.article__center h2::before {
+    margin: 0 auto 10px;
+}
+
+.article__center {
+    margin: 30px auto;
+    text-align: center;
+    max-width: 620px;
+}
+
+@media screen and (min-width:810px) {
+    .main {
+        background: 
+        fixed url('./img/oranges.jpg') no-repeat right 0 top 0,
+        url('./img/spices.jpg') no-repeat left 0 top 300px;
     }
 
-    .header__contents h1 {
-        font-size: 60px;
+    .article {
+        display: flex;
+        align-items: center;
+        margin:  auto;
+    }
+    .img__border {
+        flex: none;
+    }
+    .article__left img {
+        transform: translate(30px, 30px);
+    }
+    .article__left .article__body{
+        margin-left: 90px;
+    }
+    .article__right {
+        flex-direction: row-reverse;
+    }
+    .article__right img {
+        transform: translate(-30px, 30px);
+    }
+    .article__right .article__body {
+        margin-right: 90px;
+    }
+    .article__center {
+        margin-top: 80px;
     }
 }
