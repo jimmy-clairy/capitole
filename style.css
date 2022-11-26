@@ -177,7 +177,7 @@ p {
 
 .main {
     padding: 30px 20px;
-    background: fixed url('./img/spices.jpg') no-repeat left 0 top 0;
+    background: url('./img/spices.jpg') no-repeat left 0 top 1200px;
 }
 
 .article {
@@ -451,7 +451,7 @@ p {
 /* RECIPES */
 
 .recipes {
-    background: fixed url('./img/news-bg.jpg') no-repeat top -20px left 0;
+    background: url('./img/news-bg.jpg') no-repeat top -20px left 0;
     padding: 50px 20px;
 }
 
