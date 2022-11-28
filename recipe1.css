@@ -311,8 +311,7 @@ p {
     .main {
         background:
         url('./img/oranges.jpg') no-repeat fixed right 0 top 0px,
-        url('./img/spices.jpg') no-repeat left 0 top 300px,
-        url('./img/spices.jpg') no-repeat left 0 bottom 100px;
+        url('./img/spices.jpg') no-repeat left 0 top 300px;
     }
 
     .article {
