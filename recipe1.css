@@ -217,16 +217,18 @@ p {
     min-width: 280px;
     max-width: 375px;
     height: 425px;
-    padding: 20px 0 20px 40px;
+    padding: 20px 0 20px 35px;
     border: var(--main-color) 1px solid;
     margin: auto;
+    font-weight: 600;
 }
 
 .article__border span {
     color: #c89446;
     display: inline-block;
     width: 30px;
-    margin-right: 20px;
+    text-align: right;
+    margin-right: 25px;
 }
 
 .article__border ul {

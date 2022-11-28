@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* GENERAL */
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 
@@ -8,7 +15,8 @@
 }
 
 *, ::after, ::before {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -20,7 +28,10 @@ html {
 
 body {
     font-family: sans-serif;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 a {
@@ -74,6 +85,8 @@ p {
     color: var(--main-color);
     border: transparent 1px solid;
     padding: 5px;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
 }
 
@@ -89,6 +102,12 @@ p {
 /* HEADER */
 
 .header {
+    background:
+    -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(40%, rgba(54, 54, 54, 0.6)), to(rgba(28, 28, 28, 0.4))),
+    url('./img/eggs.jpg') center / cover;
+    background:
+    -o-linear-gradient(top, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)),
+    url('./img/eggs.jpg') center / cover;
     background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)),
     url('./img/eggs.jpg') center / cover;
@@ -111,6 +130,8 @@ p {
     margin: 0 5px;
     border: transparent solid 1px;
     padding: 5px 5px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -145,13 +166,21 @@ p {
 
 @media ( min-width:920px) {
     .header__top {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding: 30px 70px;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         position: fixed;
         top: 0px;
         width: 100%;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)),to(rgba(227, 227, 227, 0)));
+        background: -o-linear-gradient(top, rgba(0, 0, 0, 1),rgba(227, 227, 227, 0));
         background: linear-gradient(180deg, rgba(0, 0, 0, 1),rgba(227, 227, 227, 0));
         z-index: 1; 
     }
@@ -177,7 +206,7 @@ p {
 
 .main {
     padding: 30px 20px;
-    background: url('./img/spices.jpg') no-repeat left 0 top 1200px;
+    background: url('./img/oranges.jpg') no-repeat right 0 top 0 fixed;
 }
 
 .article {
@@ -218,6 +247,8 @@ p {
     padding: 8px;
     margin: 0 5px;
     border-bottom: transparent 2px solid;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
 }
 
@@ -262,24 +293,31 @@ p {
 
     .main {
         background: 
-        url('./img/oranges.jpg') no-repeat right 0 top 0px,
+        url('./img/oranges.jpg') no-repeat right 0 top 0px fixed,
         url('./img/spices.jpg') no-repeat left 0 top 300px,
-        url('./img/oranges.jpg') no-repeat right 0 top 850px,
         url('./img/spices.jpg') no-repeat left 0 bottom 100px;
     }
 
     .article {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin:  auto;
     }
 
     .img__border {
-        flex: none;
+        -webkit-box-flex: 0;
+            -ms-flex: none;
+                flex: none;
     }
 
     .article__left img {
-        transform: translate(30px, 30px);
+        -webkit-transform: translate(30px, 30px);
+            -ms-transform: translate(30px, 30px);
+                transform: translate(30px, 30px);
     }
 
     .article__left .article__body{
@@ -287,11 +325,16 @@ p {
     }
 
     .article__right {
-        flex-direction: row-reverse;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
     }
 
     .article__right img {
-        transform: translate(-30px, 30px);
+        -webkit-transform: translate(-30px, 30px);
+            -ms-transform: translate(-30px, 30px);
+                transform: translate(-30px, 30px);
     }
 
     .article__right .article__body {
@@ -310,13 +353,20 @@ p {
         position: relative;
         max-width: 1200px;
         margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .little__menu {
         max-width: 500px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         text-align: left;
     }
@@ -330,7 +380,10 @@ p {
     }
 
     .little__menu:nth-child(2n){
-        flex-direction: row-reverse;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
         text-align: right;
     }
 
@@ -345,14 +398,21 @@ p {
         border: var(--main-color) 1px solid;
         top: 57px;
         right: 50%;
-        transform: translateX(50%) rotate(45deg);
+        -webkit-transform: translateX(50%) rotate(45deg);
+            -ms-transform: translateX(50%) rotate(45deg);
+                transform: translateX(50%) rotate(45deg);
         z-index: -1;
     }
 
     .article__end {
       padding-top: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row-reverse;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
     }
 
     .article__end img {
@@ -364,6 +424,10 @@ p {
 /* RESERVATION */
 
 .reservation {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(26.5%, rgba(0, 0, 0, 0.82)), color-stop(72%, rgba(54, 54, 54, 0.5)), to(rgba(28, 28, 28, 0.4))),
+    url('./img/reservation.jpg') center / cover;
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.82) 26.5%, rgba(54, 54, 54, 0.5) 72%, rgba(28, 28, 28, 0.4)),
+    url('./img/reservation.jpg') center / cover;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 26.5%, rgba(54, 54, 54, 0.5) 72%, rgba(28, 28, 28, 0.4)),
     url('./img/reservation.jpg') center / cover;
     padding:50px 20px;
@@ -388,8 +452,13 @@ p {
 .inputs {
     margin:auto ;
     width: 255px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: 0.875rem;
 }
 
@@ -404,6 +473,8 @@ p {
     font-size: 0.875rem;
     border: #6f6f6f 1px solid;
     border-radius: 3px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -422,11 +493,15 @@ p {
 .reservation button {
     border: none;
     background-color: var(--main-color);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 .reservation button:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 @media (min-width:810px) {
@@ -438,9 +513,16 @@ p {
     .inputs {
         width: 100%;
         max-width: 840px;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .reservation button {
@@ -451,7 +533,7 @@ p {
 /* RECIPES */
 
 .recipes {
-    background: url('./img/news-bg.jpg') no-repeat top -20px left 0;
+    background: url('./img/news-bg.jpg') no-repeat top 0 left 0 fixed;
     padding: 50px 20px;
 }
 
@@ -487,8 +569,12 @@ p {
 }
 
 .container-more {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   justify-content: end;
+   -webkit-box-pack: end;
+       -ms-flex-pack: end;
+           justify-content: end;
 }
 
 @media (min-width:810px) {
@@ -531,8 +617,12 @@ p {
     .footer .container {
         max-width: 1200px;
         margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     .footer .container div:first-child {
