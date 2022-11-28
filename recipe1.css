@@ -258,6 +258,7 @@ p {
 .article__video {
     width: 100%;
     max-width: 375px;
+    min-height: 200px;
     display: block;
     margin: auto;
     border: var(--main-color) 1px solid;

@@ -308,6 +308,10 @@ p {
         margin:  auto;
     }
 
+    .article:nth-child(1){
+        margin-top: -50px;
+    }
+
     .img__border {
         -webkit-box-flex: 0;
             -ms-flex: none;
