@@ -206,7 +206,9 @@ p {
 
 .main {
     padding: 30px 20px;
-    background: url(./img/spices.jpg) no-repeat fixed;
+    background: url(./img/spices.jpg) no-repeat,
+    url(./img/oranges.jpg) no-repeat bottom 1400px right 0,
+    url(./img/spices.jpg) no-repeat bottom 0 left 0;
 }
 
 .article {
@@ -310,8 +312,8 @@ p {
 
     .main {
         background:
-        url('./img/oranges.jpg') no-repeat fixed right 0 top 0px,
-        url('./img/spices.jpg') no-repeat left 0 top 300px;
+        url('./img/oranges.jpg') no-repeat right 0 top 0px,
+        url('./img/spices.jpg') no-repeat left 0 top -20px fixed;
     }
 
     .article {
