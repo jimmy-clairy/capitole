@@ -104,13 +104,13 @@ p {
 .header {
     background:
     -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(40%, rgba(54, 54, 54, 0.6)), to(rgba(28, 28, 28, 0.4))),
-    url('./img/images800w/eggs800w.jpg') center / cover;
+    url('../img/images800w/eggs800w.jpg') center / cover;
     background:
     -o-linear-gradient(top, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)),
-    url('./img/images800w/eggs800w.jpg') center / cover;
+    url('../img/images800w/eggs800w.jpg') center / cover;
     background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)),
-    url('./img/images800w/eggs800w.jpg') center / cover;
+    url('../img/images800w/eggs800w.jpg') center / cover;
     color: var(--white-color);
     letter-spacing: 2px;
     padding: 50px 0;
@@ -168,13 +168,13 @@ p {
     .header {
         background:
         -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(40%, rgba(54, 54, 54, 0.6)), to(rgba(28, 28, 28, 0.4))),
-        url('./img/eggs.jpg') center / cover;
+        url('../img/eggs.jpg') center / cover;
         background:
         -o-linear-gradient(top, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)),
-        url('./img/eggs.jpg') center / cover;
+        url('../img/eggs.jpg') center / cover;
         background:
         linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)),
-        url('./img/eggs.jpg') center / cover;
+        url('../img/eggs.jpg') center / cover;
     }
     .header__top {
         display: -webkit-box;
@@ -218,8 +218,8 @@ p {
 .main {
     padding: 30px 20px;
     background: 
-    url('./img/spices.jpg') no-repeat left 0 top 1300px,
-    url('./img/oranges.jpg') no-repeat right 0 bottom 0;
+    url('../img/spices.jpg') no-repeat left 0 top 1300px,
+    url('../img/oranges.jpg') no-repeat right 0 bottom 0;
 }
 
 .article {
@@ -306,9 +306,9 @@ p {
 
     .main {
         background: 
-        url('./img/oranges.jpg') no-repeat right 0 top 0px fixed,
-        url('./img/spices.jpg') no-repeat left 0 top 300px,
-        url('./img/spices.jpg') no-repeat left 0 bottom 100px;
+        url('../img/oranges.jpg') no-repeat right 0 top 0px fixed,
+        url('../img/spices.jpg') no-repeat left 0 top 300px,
+        url('../img/spices.jpg') no-repeat left 0 bottom 100px;
     }
 
     .article {
@@ -442,11 +442,11 @@ p {
 
 .reservation {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(26.5%, rgba(0, 0, 0, 0.82)), color-stop(72%, rgba(54, 54, 54, 0.5)), to(rgba(28, 28, 28, 0.4))),
-    url('./img/images800w/reservation800w.jpg') center / cover;
+    url('../img/images800w/reservation800w.jpg') center / cover;
     background: -o-linear-gradient(top, rgba(0, 0, 0, 0.82) 26.5%, rgba(54, 54, 54, 0.5) 72%, rgba(28, 28, 28, 0.4)),
-    url('./img/images800w/reservation800w.jpg') center / cover;
+    url('../img/images800w/reservation800w.jpg') center / cover;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 26.5%, rgba(54, 54, 54, 0.5) 72%, rgba(28, 28, 28, 0.4)),
-    url('./img/images800w/reservation800w.jpg') center / cover;
+    url('../img/images800w/reservation800w.jpg') center / cover;
     padding:50px 20px;
     text-align: center;
 }
@@ -526,11 +526,11 @@ p {
 
     .reservation {
         background: -webkit-gradient(linear, left top, left bottom, color-stop(26.5%, rgba(0, 0, 0, 0.82)), color-stop(72%, rgba(54, 54, 54, 0.5)), to(rgba(28, 28, 28, 0.4))),
-        url('./img/reservation.jpg') center / cover;
+        url('../img/reservation.jpg') center / cover;
         background: -o-linear-gradient(top, rgba(0, 0, 0, 0.82) 26.5%, rgba(54, 54, 54, 0.5) 72%, rgba(28, 28, 28, 0.4)),
-        url('./img/reservation.jpg') center / cover;
+        url('../img/reservation.jpg') center / cover;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 26.5%, rgba(54, 54, 54, 0.5) 72%, rgba(28, 28, 28, 0.4)),
-        url('./img/reservation.jpg') center / cover;
+        url('../img/reservation.jpg') center / cover;
         padding-top: 80px;
     }
 
@@ -557,7 +557,7 @@ p {
 /* RECIPES */
 
 .recipes {
-    background: url('./img/news-bg.jpg') no-repeat top -20px left 0;
+    background: url('../img/news-bg.jpg') no-repeat top -20px left 0;
     padding: 50px 20px;
 }
 
@@ -603,7 +603,7 @@ p {
 
 @media (min-width:810px) {
     .recipes {
-        background: url('./img/news-bg.jpg') no-repeat top -20px left 0 fixed;
+        background: url('../img/news-bg.jpg') no-repeat top -20px left 0 fixed;
         padding:80px 150px 30px 50px;
     }
     .recipes__body {
@@ -623,7 +623,7 @@ p {
 
 .footer {
     padding: 50px 20px;
-    background: url(./img/splash.png) no-repeat bottom 0 right 0, #2e2e2e;
+    background: url(../img/splash.png) no-repeat bottom 0 right 0, #2e2e2e;
     margin-top: -4px;
 }
 

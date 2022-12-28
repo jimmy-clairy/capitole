@@ -104,13 +104,13 @@ p {
 .header {
     background:
     -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(40%, rgba(54, 54, 54, 0.6)), to(rgba(28, 28, 28, 0.4))),
-    url('./img/images800w/salad-chicken800w.jpg') center / cover;
+    url('../img/images800w/salad-chicken800w.jpg') center / cover;
     background:
     -o-linear-gradient(top, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)),
-    url('./img/images800w/salad-chicken800w.jpg') center / cover;
+    url('../img/images800w/salad-chicken800w.jpg') center / cover;
     background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)),
-    url('./img/images800w/salad-chicken800w.jpg') center / cover;
+    url('../img/images800w/salad-chicken800w.jpg') center / cover;
     color: var(--white-color);
     letter-spacing: 2px;
     padding: 50px 0;
@@ -168,13 +168,13 @@ p {
     .header {
         background:
         -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(40%, rgba(54, 54, 54, 0.6)), to(rgba(28, 28, 28, 0.4))),
-        url('./img/salad-chicken.jpg') center / cover;
+        url('../img/salad-chicken.jpg') center / cover;
         background:
         -o-linear-gradient(top, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)),
-        url('./img/salad-chicken.jpg') center / cover;
+        url('../img/salad-chicken.jpg') center / cover;
         background:
         linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)),
-        url('./img/salad-chicken.jpg') center / cover;
+        url('../img/salad-chicken.jpg') center / cover;
     }
     .header__top {
         display: -webkit-box;
@@ -217,9 +217,9 @@ p {
 
 .main {
     padding: 30px 20px;
-    background: url(./img/spices.jpg) no-repeat,
-    url(./img/oranges.jpg) no-repeat bottom 1400px right 0,
-    url(./img/spices.jpg) no-repeat bottom 0 left 0;
+    background: url(../img/spices.jpg) no-repeat,
+    url(../img/oranges.jpg) no-repeat bottom 1400px right 0,
+    url(../img/spices.jpg) no-repeat bottom 0 left 0;
 }
 
 .article {
@@ -323,8 +323,8 @@ p {
 
     .main {
         background:
-        url('./img/oranges.jpg') no-repeat right 0 top 0px,
-        url('./img/spices.jpg') no-repeat left 0 top -20px fixed;
+        url('../img/oranges.jpg') no-repeat right 0 top 0px,
+        url('../img/spices.jpg') no-repeat left 0 top -20px fixed;
     }
 
     .article {
@@ -405,7 +405,7 @@ p {
 
 .footer {
     padding: 50px 20px;
-    background: url(./img/splash.png) no-repeat bottom 0 right 0, #2e2e2e;
+    background: url(../img/splash.png) no-repeat bottom 0 right 0, #2e2e2e;
     margin-top: -4px;
 }
 
