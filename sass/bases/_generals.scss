@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+$color-white:#fff;
+$color-primary:#c89446;
+$font-primary: 'Pinyon Script', 'serif';
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 350px;
+    margin: auto;
+}
+
+h2::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 2rem;
+    background-color: $color-primary;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    color: $color-primary;
+    font-family: $font-primary;
+    font-size: 2.5rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+h5 {
+    text-transform: uppercase;
+    color: $color-primary;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+p {
+    color: #6f6f6f;
+    line-height: 1.5rem;
+    margin: 1rem 0;
+}
+
+.more {
+    color: $color-primary;
+    border: transparent 1px solid;
+    padding: 0.5rem;
+    margin-left: -0.5rem;
+    transition: 0.4s;
+}
+
+.more::after {
+    content: "〉";
+    padding-left: 0.5rem;
+}
+
+.more:hover {
+    border: $color-primary 1px solid;
+}

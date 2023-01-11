@@ -1,0 +1,93 @@
+.header {
+    background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)),
+    url('../img/img-compressed/images800w/eggs800w.webp') center / cover;
+    color: $color-white;
+    padding: 3rem 0 4rem;
+
+    .header-top {
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2px;
+    
+        &__logo {
+            font-weight: bold;
+            margin-bottom: 1rem;
+            transition: 0.3s;
+            &:hover {
+                color:$color-primary
+            }
+        }
+    
+        &__nav a {
+            font-size: 0.875rem;
+            margin: 0 0.4rem;
+            border: transparent solid 1px;
+            padding: 8px 0.4rem;
+            transition: 0.3s;
+            &:hover {
+                border: $color-primary solid 1px;
+            }
+        }
+    }
+
+    .header-body {
+        margin-top: 5rem;
+        text-align: center;
+        letter-spacing: 0.3rem;
+
+        & p:first-child {
+            font-family:$font-primary;
+            color: $color-primary;
+            font-size: 3rem;
+        }
+
+        & h1 {
+            text-transform: uppercase;
+            font-size: 2.125rem;
+            font-weight: 900;
+            margin: 1.5rem 0;
+        }
+
+        & p:last-child{
+            text-transform: uppercase;
+            color: inherit;
+        }
+    }
+}
+
+@media screen and (min-width:920px) {
+    .header {
+        background:
+        linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)),
+        url('../img/img-compressed/eggs.webp') center / cover;
+        padding: 10rem 0 8rem;
+
+        .header-top {
+            padding: 1.875rem 5rem;
+            position: fixed;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 1),rgba(227, 227, 227, 0));
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1;
+
+            &__logo {
+                margin: 0;
+            }
+        }
+
+        .header-body {
+            & p:first-child{
+                font-size: 5rem;
+            }
+
+            & h1 {
+                font-size: 4rem;
+            }
+        }
+    }
+}

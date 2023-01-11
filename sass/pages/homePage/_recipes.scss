@@ -1,0 +1,45 @@
+.recipes {
+    background: url('../img/news-bg.jpg') no-repeat top -20px left 0;
+    padding: 3.125rem 1.25rem;
+
+    &__header {
+        max-width: 45rem;
+        margin-left: auto;
+    }
+
+    &__date {
+        font-size: 1.125rem;
+        color: #6f6f6f;
+        margin-top: 1rem;
+        span {
+            font-size: 1.75rem;
+            color: black;
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+@media (min-width:810px) {
+    .recipes {
+        background: url('../img/news-bg.jpg') no-repeat top 0 left 0 fixed;
+        padding:5rem 10rem;
+
+        &__header {
+            text-align: right;
+    
+            h2::before {
+                margin-left: auto;
+            }
+        }
+
+        &__body {
+            max-width: 57.5rem;
+            margin-left: auto;
+        }
+
+        &__container-link {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

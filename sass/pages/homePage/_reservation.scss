@@ -1,0 +1,90 @@
+.reservation {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 26.5%, rgba(54, 54, 54, 0.5) 72%, rgba(28, 28, 28, 0.4)),
+    url('../img/img-compressed/images800w/reservation800w.webp') center / cover;
+    padding:3.125rem 1.25rem;
+    text-align: center;
+
+    h2::before {
+        margin: auto;
+    }
+    h3{
+        color: $color-white;
+    }
+    p {
+        color: $color-white;
+        opacity: 0.8;
+        margin: 0.625rem auto 0;
+        max-width: 660px;
+    }
+
+    .inputs {
+        margin:auto ;
+        width: 15.9rem;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.875rem;
+
+        input, select{
+            width: 15.9rem;
+            height: 2.5rem;
+            padding: 0.625rem;
+            text-transform: uppercase;
+            color: $color-white;
+            background-color: transparent;
+            cursor: pointer;
+            font-size: 0.875rem;
+            border: #6f6f6f 1px solid;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+        input:focus {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        input {
+            margin: 1.25rem 0;
+        }
+        
+        select option {
+            color: black;
+        }
+    }
+
+    button {
+        width: 15.9rem;
+        height: 2.5rem;
+        padding: 0.625rem;
+        text-transform: uppercase;
+        color: $color-white;
+        border: none;
+        border-radius: 3px;
+        background-color: $color-primary;
+        transition: 0.3s;
+        letter-spacing: 0.2rem;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media (min-width:810px) {
+
+    .reservation {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 26.5%, rgba(54, 54, 54, 0.5) 72%, rgba(28, 28, 28, 0.4)),
+        url('../img/img-compressed/reservation.webp') center / cover;
+        padding-top: 5rem;
+
+        .inputs {
+            width: 100%;
+            max-width: 52.5rem;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        button {
+            margin-top: 1rem;
+        }
+    }
+}
