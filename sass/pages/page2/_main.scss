@@ -1,9 +1,3 @@
-.page-2 .header {
-    background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)), 
-    url('../img/img-compressed/images800w/salad-chicken800w.webp') center / cover;
-}
-
 .main-page2 {
     background: url("../img/spices.jpg") no-repeat,
     url("../img/oranges.jpg") no-repeat bottom 1400px right 0,
@@ -56,12 +50,6 @@
 }
 
 @media (min-width:810px) {
-    
-    .page-2 .header {
-        background:
-        linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)), 
-        url('../img/img-compressed/salad-chicken.webp') center / cover;
-    }
 
     .main-page2 {
         background:

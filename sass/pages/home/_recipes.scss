@@ -1,5 +1,5 @@
 .recipes {
-    background: url('../img/img-compressed/news-bg.webp') no-repeat top -20px left 0;
+    background: url('../img/news-bg.jpg') no-repeat top -20px left 0;
     padding: 3.125rem 1.25rem;
 
     &__header {
@@ -9,11 +9,11 @@
 
     &__date {
         font-size: 1.125rem;
-        color: #6f6f6f;
+        color: lighten($color-black, 45);
         margin-top: 1rem;
         span {
             font-size: 1.75rem;
-            color: black;
+            color: $color-black;
             margin-right: 0.5rem;
         }
     }
@@ -21,7 +21,7 @@
 
 @media (min-width:810px) {
     .recipes {
-        background: url('../img/img-compressed/news-bg.webp') no-repeat top 0 left 0 fixed;
+        background: url('../img/news-bg.jpg') no-repeat top 0 left 0 fixed;
         padding:5rem 10rem;
 
         &__header {

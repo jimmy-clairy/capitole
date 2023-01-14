@@ -1,93 +1,115 @@
 .header {
-    background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)),
-    url('../img/img-compressed/images800w/eggs800w.webp') center / cover;
-    color: $color-white;
-    padding: 3rem 0 4rem;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 4rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, rgba($color-black, 1), rgba($color-black, 0.4));
 
-    .header-top {
-        text-transform: uppercase;
-        text-align: center;
-        letter-spacing: 2px;
-    
-        &__logo {
-            font-weight: bold;
-            margin-bottom: 1rem;
-            transition: 0.3s;
-            &:hover {
-                color:$color-primary
-            }
-        }
-    
-        &__nav a {
-            font-size: 0.875rem;
-            margin: 0 0.4rem;
-            border: transparent solid 1px;
-            padding: 8px 0.4rem;
-            transition: 0.3s;
-            &:hover {
-                border: $color-primary solid 1px;
-            }
+    &__logo {
+        color: $color-white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        &:hover {
+            color: $color-primary;
         }
     }
 
-    .header-body {
-        margin-top: 5rem;
-        text-align: center;
-        letter-spacing: 0.3rem;
-
-        & p:first-child {
-            font-family:$font-primary;
-            color: $color-primary;
-            font-size: 3rem;
+    &__nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        min-height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba($color-black, 0.9);
+        padding: 1.25rem 2.5rem;
+        border-bottom: 0.1rem solid $color-white;
+        transform: translateY(-100%);
+        transition: transform 0.4s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+        &.active {
+            transform: translateY(0);
         }
-
-        & h1 {
-            text-transform: uppercase;
-            font-size: 2.125rem;
-            font-weight: 900;
-            margin: 1.5rem 0;
+        
+        &__link {
+            color: $color-white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0.625rem 0;
+            text-decoration: none;
+            transition: 0.4s;
+            &:hover {
+                color: $color-primary;
+                text-decoration: underline;
+            }
         }
-
-        & p:last-child{
-            text-transform: uppercase;
-            color: inherit;
+    }
+    
+    &__btn-toggle {
+        position: relative;
+        z-index: 10;
+        height: 3.125rem;
+        width: 3.125rem;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        .line {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 0.1875rem;
+            background: $color-white;
+            transition: transform 0.3s ease-out, opacity 0.1s ease-out;
+        }
+        .l1 {
+            transform: translateY(-0.625rem);
+        }
+        .l3 {
+            transform: translateY(0.625rem);
+        }
+    
+        &.active .l1 {
+            transform: translateY(0) rotate(135deg);
+        }
+        &.active .l2 {
+            opacity: 0;
+        }
+        &.active .l3 {
+            transform: translateY(0) rotate(-135deg);
         }
     }
 }
 
-@media screen and (min-width:920px) {
+@media  (min-width:900px) {
+
     .header {
-        background:
-        linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)),
-        url('../img/img-compressed/eggs.webp') center / cover;
-        padding: 10rem 0 8rem;
-
-        .header-top {
-            padding: 1.875rem 5rem;
-            position: fixed;
-            top: 0px;
-            left: 0;
-            width: 100%;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 1),rgba(227, 227, 227, 0));
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1;
-
-            &__logo {
-                margin: 0;
+        padding: 0 4rem;
+        &__nav {
+            position: relative;
+            flex-direction: row;
+            transform: translateY(0);
+            width: fit-content;
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            &__link {
+                margin-left: 1.2rem;
             }
         }
 
-        .header-body {
-            & p:first-child{
-                font-size: 5rem;
-            }
 
-            & h1 {
-                font-size: 4rem;
-            }
+        &__btn-toggle {
+            display: none;
         }
     }
 }

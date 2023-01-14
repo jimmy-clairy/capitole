@@ -81,83 +81,151 @@ p {
 }
 
 .header {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)), url("../img/img-compressed/images800w/eggs800w.webp") center/cover;
-  color: #fff;
-  padding: 3rem 0 4rem;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 4rem;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, black, rgba(0, 0, 0, 0.4));
 }
-.header .header-top {
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 2px;
-}
-.header .header-top__logo {
+.header__logo {
+  color: #f1f1f1;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 1rem;
-  transition: 0.3s;
+  letter-spacing: 0.1rem;
 }
-.header .header-top__logo:hover {
+.header__logo:hover {
   color: #c89446;
 }
-.header .header-top__nav a {
-  font-size: 0.875rem;
-  margin: 0 0.4rem;
-  border: transparent solid 1px;
-  padding: 8px 0.4rem;
-  transition: 0.3s;
+.header__nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1.25rem 2.5rem;
+  border-bottom: 0.1rem solid #f1f1f1;
+  transform: translateY(-100%);
+  transition: transform 0.4s cubic-bezier(0.73, 0.11, 0.67, 0.84);
 }
-.header .header-top__nav a:hover {
-  border: #c89446 solid 1px;
+.header__nav.active {
+  transform: translateY(0);
 }
-.header .header-body {
-  margin-top: 5rem;
+.header__nav__link {
+  color: #f1f1f1;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.625rem 0;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.header__nav__link:hover {
+  color: #c89446;
+  text-decoration: underline;
+}
+.header__btn-toggle {
+  position: relative;
+  z-index: 10;
+  height: 3.125rem;
+  width: 3.125rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+.header__btn-toggle .line {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 0.1875rem;
+  background: #f1f1f1;
+  transition: transform 0.3s ease-out, opacity 0.1s ease-out;
+}
+.header__btn-toggle .l1 {
+  transform: translateY(-0.625rem);
+}
+.header__btn-toggle .l3 {
+  transform: translateY(0.625rem);
+}
+.header__btn-toggle.active .l1 {
+  transform: translateY(0) rotate(135deg);
+}
+.header__btn-toggle.active .l2 {
+  opacity: 0;
+}
+.header__btn-toggle.active .l3 {
+  transform: translateY(0) rotate(-135deg);
+}
+
+@media (min-width: 900px) {
+  .header {
+    padding: 0 4rem;
+  }
+  .header__nav {
+    position: relative;
+    flex-direction: row;
+    transform: translateY(0);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+  .header__nav__link {
+    margin-left: 1.2rem;
+  }
+  .header__btn-toggle {
+    display: none;
+  }
+}
+.main-img {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.1)), url("../img/compressed/800w/eggs.webp") center/cover;
+  color: #f1f1f1;
+  padding: 8rem 0 4rem;
   text-align: center;
   letter-spacing: 0.3rem;
 }
-.header .header-body p:first-child {
+.main-img__p1 {
   font-family: "Pinyon Script", "serif";
   color: #c89446;
   font-size: 3rem;
 }
-.header .header-body h1 {
+.main-img__heading {
   text-transform: uppercase;
   font-size: 2.125rem;
   font-weight: 900;
   margin: 1.5rem 0;
 }
-.header .header-body p:last-child {
+.main-img__p2 {
   text-transform: uppercase;
   color: inherit;
 }
 
 @media screen and (min-width: 920px) {
-  .header {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)), url("../img/img-compressed/eggs.webp") center/cover;
+  .main-img {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0)), url("../img/compressed/eggs.webp") center/cover;
     padding: 10rem 0 8rem;
   }
-  .header .header-top {
-    padding: 1.875rem 5rem;
-    position: fixed;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(180deg, rgb(0, 0, 0), rgba(227, 227, 227, 0));
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-  }
-  .header .header-top__logo {
-    margin: 0;
-  }
-  .header .header-body p:first-child {
+  .main-img__p1 {
     font-size: 5rem;
   }
-  .header .header-body h1 {
+  .main-img__heading {
     font-size: 4rem;
   }
 }
 .main {
-  padding: 1.875rem 1.25rem;
+  padding: 1.8rem 1.25rem;
   background: url("../img/spices.jpg") no-repeat left 0 top 1300px, url("../img/oranges.jpg") no-repeat right 0 bottom 0;
 }
 .main .article {
@@ -274,7 +342,7 @@ p {
     text-align: left;
   }
   .main .little__menu h4, .main .little__menu p {
-    background-color: #fff;
+    background-color: white;
   }
   .main .little__menu:nth-child(2n+1) img {
     margin-right: 2rem;
@@ -303,13 +371,18 @@ p {
   }
   .main .article__end img {
     border: none;
-    margin-bottom: -1.875rem;
+    margin-bottom: -1.75rem;
   }
 }
-.page-2 .header {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)), url("../img/img-compressed/images800w/salad-chicken800w.webp") center/cover;
+.page-2 .main-img {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.1)), url("../img/compressed/800w/salad-chicken.webp") center/cover;
 }
 
+@media screen and (min-width: 920px) {
+  .page-2 .main-img {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.1)), url("../img/compressed/salad-chicken.webp") center/cover;
+  }
+}
 .main-page2 {
   background: url("../img/spices.jpg") no-repeat, url("../img/oranges.jpg") no-repeat bottom 1400px right 0, url("../img/spices.jpg") no-repeat bottom 0 left 0;
 }
@@ -349,9 +422,6 @@ p {
 }
 
 @media (min-width: 810px) {
-  .page-2 .header {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(54, 54, 54, 0.6) 40%, rgba(28, 28, 28, 0.4)), url("../img/img-compressed/salad-chicken.webp") center/cover;
-  }
   .main-page2 {
     background: url("../img/oranges.jpg") no-repeat right 0 top 20px fixed, url("../img/spices.jpg") no-repeat left 0 top 520px;
   }
@@ -363,7 +433,7 @@ p {
   }
 }
 .reservation {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 26.5%, rgba(54, 54, 54, 0.5) 72%, rgba(28, 28, 28, 0.4)), url("../img/img-compressed/images800w/reservation800w.webp") center/cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0.1)), url("../img/compressed/800w/reservation.webp") center/cover;
   padding: 3.125rem 1.25rem;
   text-align: center;
 }
@@ -371,10 +441,10 @@ p {
   margin: auto;
 }
 .reservation h3 {
-  color: #fff;
+  color: #f1f1f1;
 }
 .reservation p {
-  color: #fff;
+  color: #f1f1f1;
   opacity: 0.8;
   margin: 0.625rem auto 0;
   max-width: 660px;
@@ -391,29 +461,29 @@ p {
   height: 2.5rem;
   padding: 0.625rem;
   text-transform: uppercase;
-  color: #fff;
+  color: #f1f1f1;
   background-color: transparent;
   cursor: pointer;
   font-size: 0.875rem;
-  border: #6f6f6f 1px solid;
+  border: #b3b3b3 1px solid;
   border-radius: 3px;
   transition: all 0.3s;
 }
 .reservation .inputs input:focus {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(241, 241, 241, 0.2);
 }
 .reservation .inputs input {
   margin: 1.25rem 0;
 }
 .reservation .inputs select option {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .reservation button {
   width: 15.9rem;
   height: 2.5rem;
   padding: 0.625rem;
   text-transform: uppercase;
-  color: #fff;
+  color: #f1f1f1;
   border: none;
   border-radius: 3px;
   background-color: #c89446;
@@ -427,7 +497,7 @@ p {
 
 @media (min-width: 810px) {
   .reservation {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 26.5%, rgba(54, 54, 54, 0.5) 72%, rgba(28, 28, 28, 0.4)), url("../img/img-compressed/reservation.webp") center/cover;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0.1)), url("../img/compressed/reservation.webp") center/cover;
     padding-top: 5rem;
   }
   .reservation .inputs {
@@ -442,7 +512,7 @@ p {
   }
 }
 .recipes {
-  background: url("../img/img-compressed/news-bg.webp") no-repeat top -20px left 0;
+  background: url("../img/news-bg.jpg") no-repeat top -20px left 0;
   padding: 3.125rem 1.25rem;
 }
 .recipes__header {
@@ -451,18 +521,18 @@ p {
 }
 .recipes__date {
   font-size: 1.125rem;
-  color: #6f6f6f;
+  color: #737373;
   margin-top: 1rem;
 }
 .recipes__date span {
   font-size: 1.75rem;
-  color: black;
+  color: rgb(0, 0, 0);
   margin-right: 0.5rem;
 }
 
 @media (min-width: 810px) {
   .recipes {
-    background: url("../img/img-compressed/news-bg.webp") no-repeat top 0 left 0 fixed;
+    background: url("../img/news-bg.jpg") no-repeat top 0 left 0 fixed;
     padding: 5rem 10rem;
   }
   .recipes__header {
@@ -487,18 +557,22 @@ p {
 
 .footer {
   padding: 3rem 1.25rem;
-  background: url("../img/img-compressed/splash.webp") no-repeat bottom 0 right 0, #2e2e2e;
+  background: url("../img/compressed/splash.webp") no-repeat bottom 0 right 0, rgba(0, 0, 0, 0.8);
   margin-top: -4px;
 }
-.footer p {
-  color: #fff;
+.footer__heading {
+  color: #c89446;
+  font-size: 1.2rem;
+}
+.footer__paragraph {
+  color: #f1f1f1;
   opacity: 0.9;
 }
-.footer a {
+.footer__link {
   font-size: 1.1rem;
   transition: 0.3s;
 }
-.footer a:hover {
+.footer__link:hover {
   color: #c89446;
   text-decoration: underline;
 }

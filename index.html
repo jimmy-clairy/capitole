@@ -7,35 +7,39 @@
     <meta name="description" content="Le restaurant Le Capitoul">
     <link rel="stylesheet" href="./sass/style.css">
     <title>Le Capitoul</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- HEADER -->
     <header class="header">
+        <a class="header__logo" href="index.html">Le Capitoul</a>
+        <nav class="header__nav">
+            <a class="header__nav__link" href="#">A propos</a>
+            <a class="header__nav__link" href="#menu">Menu</a>
+            <a class="header__nav__link" href="#recipes">Recette</a>
+            <a class="header__nav__link" href="#footer">Contact</a>
+            <a class="header__nav__link" href="#reservation" class="active">Réserver</a>
+        </nav>
 
-        <div class="header-top">
-            <a href="index.html" class="header-top__logo">Le Capitoul</a>
-            <nav class="header-top__nav">
-                <a href="#">A propos</a>
-                <a href="#menu">Menu</a>
-                <a href="#recipes">Recette</a>
-                <a href="#footer">Contact</a>
-                <a href="#reservation" class="active">Réserver</a>
-            </nav>
-        </div>
-
-        <div class="header-body">
-            <p>Welcome</p>
-            <h1>Le Capitoul</h1>
-            <p>Spécialités Méditerranéennes</p>
-        </div>
-
+        <button aria-label="toggle curtain navigation" class="header__btn-toggle">
+            <span class="line l1"></span>
+            <span class="line l2"></span>
+            <span class="line l3"></span>
+        </button>
     </header>
+
+    <!-- MAIN-IMG -->
+    <div class="main-img">
+        <p class="main-img__p1">Welcome</p>
+        <h1 class="main-img__heading">Le Capitoul</h1>
+        <p class="main-img__p2">Spécialités Méditerranéennes</p>
+    </div>
 
     <!-- MAIN -->
     <main class="main">
             <article class="article article__left">
                 <div class="article__img-border">
-                    <img src="./img/img-compressed/burger.webp" alt="Burger" height="425" width="350">
+                    <img src="./img/compressed/burger.webp" alt="Burger" height="425" width="350">
                 </div>
                 <div class="body">
                     <h2>Discover</h2>
@@ -46,7 +50,7 @@
             </article>
             <article class="article article__right">
                 <div class="article__img-border">
-                    <img src="./img/img-compressed/crusted-chicken.webp" alt="Crusted chicken" height="425" width="350">
+                    <img src="./img/compressed/crusted-chicken.webp" alt="Crusted chicken" height="425" width="350">
                 </div>
                 <div class="body">
                     <h2>Tasteful</h2>
@@ -78,7 +82,7 @@
             <div class="multi__menu">
                 <!-- LITTLE MENU -->
                 <div class="little__menu ">
-                    <img src="./img/img-compressed/crusted-chicken-square.webp" alt="Crusted Chicken" height="160" width="160">
+                    <img src="./img/compressed/crusted-chicken-square.webp" alt="Crusted Chicken" height="160" width="160">
                     <div class="body">
                         <h4>Amazing Crusted Chicken</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio consectetur, dolores sequi laboriosa ducimus</p>
@@ -87,7 +91,7 @@
                 </div>
 
                 <div class="little__menu ">
-                    <img src="./img/img-compressed/poisson-square.webp" alt="Poisson" height="160" width="160">
+                    <img src="./img/compressed/poisson-square.webp" alt="Poisson" height="160" width="160">
                     <div class="body">
                         <h4>Amazing Fish</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio consectetur, dolores sequi laboriosa ducimus</p>
@@ -96,7 +100,7 @@
                 </div>
 
                 <div class="little__menu ">
-                    <img src="./img/img-compressed/paella-square.webp" alt="Paella" height="160" width="160">
+                    <img src="./img/compressed/paella-square.webp" alt="Paella" height="160" width="160">
                     <div class="body">
                         <h4>Amazing Paella</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio consectetur, dolores sequi laboriosa ducimus</p>
@@ -105,7 +109,7 @@
                 </div>
 
                 <div class="little__menu ">
-                    <img src="./img/img-compressed/bobun-light-square.webp" alt="Bobun light" height="160" width="160">
+                    <img src="./img/compressed/bobun-light-square.webp" alt="Bobun light" height="160" width="160">
                     <div class="body">
                         <h4>Amazing Bobun Light</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio consectetur, dolores sequi laboriosa ducimus</p>
@@ -119,7 +123,7 @@
             
             <!-- ARTICLE END -->
             <article class="article article__end">
-                <img src="./img/img-compressed/chief.webp" alt="photo du chef cuisinier" width="404" height="539">
+                <img src="./img/compressed/chief.webp" alt="photo du chef cuisinier" width="404" height="539">
                 <div class="article__body">
                     <h2 id="chef">Chef</h2>
                     <h3>MEET OUR EXECUTIVE CHEF, CHRISTIAN JACOB</h3>
@@ -187,17 +191,17 @@
     <footer class="footer" id="footer">
         <div class="footer__container">
             <div>
-                <h5>Le capitoul</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorum, sint corporis nostrum, possimus unde eos vitae eius quasi saepe.</p>
+                <p class="footer__heading">Le capitoul</p>
+                <p class="footer__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorum, sint corporis nostrum, possimus unde eos vitae eius quasi saepe.</p>
             </div>
             <div>
-                <h5>Contact info</h5>
-                <p><a href="mailto:jimcl@hotmail.fr">jimcl@hotmail.fr</a></p>
-                <p><a href="tel:+33662607431">Tel: 06 62 60 74 31</a></p>
+                <p class="footer__heading">Contact info</p>
+                <p class="footer__paragraph"><a class="footer__link" href="mailto:jimcl@hotmail.fr">jimcl@hotmail.fr</a></p>
+                <p class="footer__paragraph"><a class="footer__link" href="tel:+33662607431">Tel: 06 62 60 74 31</a></p>
             </div>
             <div>
-                <h5>Openings hours</h5>
-                <p>Monday to Friday <br> 10:00 AM - 11:00 PM</p>
+                <p class="footer__heading">Openings hours</p>
+                <p class="footer__paragraph">Monday to Friday <br> 10:00 AM - 11:00 PM</p>
             </div>
         </div>
         <p class="footer__reserved"><span>2022 Le Capitoul. </span> All rights reserved.</p>

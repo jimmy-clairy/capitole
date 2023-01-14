@@ -7,30 +7,36 @@
     <meta name="description" content="Recette 1">
     <link rel="stylesheet" href="../sass/style.css">
     <title>Recette 1</title>
+    <script src="../script.js" defer></script>
 </head>
 <body class="page-2">
 
     <!-- HEADER -->
     <header class="header">
+        <a class="header__logo" href="../index.html">Le Capitoul</a>
 
-        <div class="header-top">
-            <a href="../index.html" class="header-top__logo">Le Capitoul</a>
-            <nav class="header-top__nav">
-                <a href="#">A propos</a>
-                <a href="#menu">Menu</a>
-                <a href="../index.html#recipes">Recette</a>
-                <a href="#footer">Contact</a>
-                <a href="../index.html#reservation" class="active">Réserver</a>
-            </nav>
-        </div>
+        <nav class="header__nav">
+            <a class="header__nav__link" href="#">A propos</a>
+            <a class="header__nav__link" href="#menu">Menu</a>
+            <a class="header__nav__link" href="../index.html#recipes">Recette</a>
+            <a class="header__nav__link" href="#footer">Contact</a>
+            <a class="header__nav__link" href="../index.html#reservation" class="active">Réserver</a>
+        </nav>
 
-        <div class="header-body">
-            <p>Recipe 1</p>
-            <h1>Salt chicken</h1>
-            <p>EASY TO COOK | 10MIN PREPARATION</p>
-        </div>
+        <button aria-label="toggle curtain navigation" class="header__btn-toggle">
+            <span class="line l1"></span>
+            <span class="line l2"></span>
+            <span class="line l3"></span>
+        </button>
 
     </header>
+
+    <!-- MAIN-IMG -->
+    <div class="main-img">
+        <p class="main-img__p1">recipe 1</p>
+        <h1 class="main-img__heading">salt chicken</h1>
+        <p class="main-img__p2">esay to cook | 10min preparation</p>
+    </div>
 
     <!-- MAIN -->
     <main class="main main-page2">
@@ -77,7 +83,7 @@
             <div class="multi__menu">
                 <!-- LITTLE MENU -->
                 <div class="little__menu ">
-                    <img src="../img/img-compressed/crusted-chicken-square.webp" alt="Crusted Chicken" height="160" width="160">
+                    <img src="../img/compressed/crusted-chicken-square.webp" alt="Crusted Chicken" height="160" width="160">
                     <div class="body">
                         <h4>Amazing Crusted Chicken</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio consectetur, dolores sequi laboriosa ducimus</p>
@@ -86,7 +92,7 @@
                 </div>
 
                 <div class="little__menu ">
-                    <img src="../img/img-compressed/poisson-square.webp" alt="Poisson" height="160" width="160">
+                    <img src="../img/compressed/poisson-square.webp" alt="Poisson" height="160" width="160">
                     <div class="body">
                         <h4>Amazing Fish</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio consectetur, dolores sequi laboriosa ducimus</p>
@@ -95,7 +101,7 @@
                 </div>
 
                 <div class="little__menu ">
-                    <img src="../img/img-compressed/paella-square.webp" alt="Paella" height="160" width="160">
+                    <img src="../img/compressed/paella-square.webp" alt="Paella" height="160" width="160">
                     <div class="body">
                         <h4>Amazing Paella</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio consectetur, dolores sequi laboriosa ducimus</p>
@@ -104,7 +110,7 @@
                 </div>
 
                 <div class="little__menu ">
-                    <img src="../img/img-compressed/bobun-light-square.webp" alt="Bobun light" height="160" width="160">
+                    <img src="../img/compressed/bobun-light-square.webp" alt="Bobun light" height="160" width="160">
                     <div class="body">
                         <h4>Amazing Bobun Light</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio consectetur, dolores sequi laboriosa ducimus</p>
@@ -118,20 +124,19 @@
     <!-- FOOTER -->
     <footer class="footer" id="footer">
         <div class="footer__container">
-        <div>
-            <h5>Le capitoul</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorum, sint corporis nostrum, possimus unde eos vitae eius quasi saepe.</p>
-        </div>
-        <div>
-            <h5>Contact info</h5>
-            <p><a href="mailto:jimcl@hotmail.fr">jimcl@hotmail.fr</a></p>
-            <p><a href="tel:+33662607431">Tel: 06 62 60 74 31</a></p>
-            
-        </div>
-        <div>
-            <h5>Openings hours</h5>
-            <p>Monday to Friday <br> 10:00 AM - 11:00 PM</p>
-        </div>
+            <div>
+                <p class="footer__heading">Le capitoul</p>
+                <p class="footer__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorum, sint corporis nostrum, possimus unde eos vitae eius quasi saepe.</p>
+            </div>
+            <div>
+                <p class="footer__heading">Contact info</p>
+                <p class="footer__paragraph"><a class="footer__link" href="mailto:jimcl@hotmail.fr">jimcl@hotmail.fr</a></p>
+                <p class="footer__paragraph"><a class="footer__link" href="tel:+33662607431">Tel: 06 62 60 74 31</a></p>
+            </div>
+            <div>
+                <p class="footer__heading">Openings hours</p>
+                <p class="footer__paragraph">Monday to Friday <br> 10:00 AM - 11:00 PM</p>
+            </div>
         </div>
         <p class="footer__reserved"><span>2022 Le Capitoul. </span> All rights reserved.</p>
     </footer>

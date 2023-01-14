@@ -1,5 +1,5 @@
 .main {
-    padding: 1.875rem 1.25rem;
+    padding: 1.8rem 1.25rem;
     background: 
     url('../img/spices.jpg') no-repeat left 0 top 1300px,
     url('../img/oranges.jpg') no-repeat right 0 bottom 0;
@@ -87,7 +87,6 @@
         background: 
         url('../img/oranges.jpg') no-repeat right 0 top 700px,
         url('../img/spices.jpg') no-repeat left 0 top 150px fixed;
-        // url('../img/spices.jpg') no-repeat left 0 bottom 100px;
 
         .article {
             display: flex;
@@ -146,7 +145,7 @@
             text-align: left;
 
             h4, p {
-                background-color: $color-white;
+                background-color: white;
             }
 
             &:nth-child(2n+1) img{
@@ -180,7 +179,7 @@
 
             img {
                 border: none;
-                margin-bottom: -1.875rem;
+                margin-bottom: -1.75rem;
             }
         }
     }
