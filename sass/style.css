@@ -442,7 +442,7 @@ p {
   }
 }
 .recipes {
-  background: url("../img/news-bg.jpg") no-repeat top -20px left 0;
+  background: url("../img/img-compressed/news-bg.webp") no-repeat top -20px left 0;
   padding: 3.125rem 1.25rem;
 }
 .recipes__header {
@@ -462,7 +462,7 @@ p {
 
 @media (min-width: 810px) {
   .recipes {
-    background: url("../img/news-bg.jpg") no-repeat top 0 left 0 fixed;
+    background: url("../img/img-compressed/news-bg.webp") no-repeat top 0 left 0 fixed;
     padding: 5rem 10rem;
   }
   .recipes__header {
