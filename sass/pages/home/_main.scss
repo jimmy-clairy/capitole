@@ -18,24 +18,24 @@
         }
     }
 
-    .article__center {
+    .article-center {
         padding-top:1rem;
         margin: auto;
         text-align: center;
         max-width: 52rem;
 
-        h2::before {
-            margin: 0 auto 1rem;
+        &__heading-top::before {
+            margin: 1rem auto 0.5rem;
         }
     }
 
-    .mid__nav {
+    .mid-nav {
         text-align: center;
         text-transform: uppercase;
         font-weight: 600;
         margin-top: 2rem;
 
-        a {
+        &__link {
             padding: 0.5rem;
             margin: 0 0.5rem;
             border-bottom: transparent 2px solid;
@@ -50,34 +50,43 @@
         }
     }
 
-    .little__menu {
-        margin: 2rem auto;
-        text-align: center;
-        max-width: 22rem;
+    .multi-menu {
+        &__container {
+            margin: 2rem auto;
+            text-align: center;
+            max-width: 22rem;
+        }
 
-        img {
+        &__img {
             height: 10rem;
             width: 10rem;
             border: $color-primary 1px solid;
         }
-        h4 {
+
+        &__heading {
             font-size: 1.125rem;
             padding: 1rem 0 0;
         }
-        p {
+
+        &__p {
             font-size: 0.875rem;
             margin: 0;
             padding: 1rem 0 0;
         }
-        .price{
+
+        &__price{
             font-size: 2.5rem;
             color: $color-primary;
             font-family: $font-primary;
         }
+        
     }
 
-    .article__end img {
-        border: $color-primary 1px solid;
+
+    .article-end {
+        &__img {
+            border: $color-primary 1px solid;
+        }
     }
 }
 
@@ -105,7 +114,7 @@
                 transform: translate(2rem, 2rem);
             }
             
-            .body{
+            .article__body {
                 margin-left: 5.5rem;
             }
         }
@@ -117,44 +126,40 @@
                 transform: translate(-2rem, 2rem);
             }
             
-            .body{
+            .article__body {
                 margin-right: 5.5rem;
             }
         }
 
-        .article__center {
+        .article-center {
             padding-top: 5rem;
         }
-
-        .mid__nav{
-            margin-bottom: 6.25rem;
-        }
         
-        .multi__menu{
+        .multi-menu{
             position: relative;
             max-width: 75rem;
-            margin: auto;
+            margin: 5rem auto 2rem;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-        }
 
-        .little__menu {
-            max-width: 31.25rem;
-            display: flex;
-            text-align: left;
-
-            h4, p {
-                background-color: white;
+            &__container {
+                max-width: 31.25rem;
+                display: flex;
+                text-align: left;
             }
 
-            &:nth-child(2n+1) img{
+            &__heading, &__p {
+                background-color: white;
+            }
+            &__container:nth-child(2n+1) img{
                 margin-right: 2rem;
             }
 
-            &:nth-child(2n){
+            &__container:nth-child(2n){
                 flex-direction: row-reverse;
                 text-align: right;
+
                 img {
                     margin-left: 2rem;
                 }
@@ -172,12 +177,12 @@
             z-index: -1;
         }
 
-        .article__end {
+        .article-end {
             padding-top: 3.125rem;
             display: flex;
             flex-direction: row-reverse;
 
-            img {
+            &__img {
                 border: none;
                 margin-bottom: -1.75rem;
             }

@@ -1,10 +1,15 @@
+@import "./bases/variables";
 @import "./bases/generals";
+
 @import "./layout/header";
+@import "./layout/form";
+@import "./layout/footer";
+
 @import "./pages/home/main-img";
 @import "./pages/home/main";
+@import "./pages/home/reservation";
+@import "./pages/home/map";
+@import "./pages/home/recipes";
+
 @import "./pages/page2/main-img";
 @import "./pages/page2/main";
-@import "./pages/home/reservation";
-@import "./pages/home/recipes";
-@import "./pages/home/map";
-@import "./layout/footer";

@@ -1,0 +1,68 @@
+.form{
+    &__inputs {
+        margin:auto ;
+        width: 15.9rem;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.875rem;
+
+        input, select{
+            width: 15.9rem;
+            height: 2.5rem;
+            padding: 0.625rem;
+            text-transform: uppercase;
+            color: $color-white;
+            background-color: transparent;
+            cursor: pointer;
+            font-size: 0.875rem;
+            border: lighten($color-black, 70) 1px solid;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+
+        input:focus {
+            background-color: rgba($color-white, 0.2);
+        }
+        
+        input {
+            margin: 1.25rem 0;
+        }
+        
+        select option {
+            color: $color-black;
+        }
+    }
+
+    &__btn {
+        width: 15.9rem;
+        height: 2.5rem;
+        padding: 0.625rem;
+        text-transform: uppercase;
+        color: $color-white;
+        border: none;
+        border-radius: 3px;
+        background-color: $color-primary;
+        transition: 0.3s;
+        letter-spacing: 0.2rem;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media (min-width:810px) {
+    .form {
+        &__inputs {
+            width: 100%;
+            max-width: 52.5rem;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        &__btn {
+            margin-top: 1rem;
+        }
+    }
+}

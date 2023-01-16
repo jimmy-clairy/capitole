@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 
-$color-primary:#c89446;
-$color-white:#f1f1f1;
-$color-black:rgb(0, 0, 0);
-$font-primary: 'Pinyon Script', 'serif';
-
 *, ::after, ::before {
     box-sizing: border-box;
     padding: 0;
@@ -18,10 +13,13 @@ html {
     user-select: none;
 }
 
+li {
+    list-style: none;
+}
+
 a {
     color: inherit;
     text-decoration: none;
-    display: inline-block;
 }
 
 img {
@@ -38,7 +36,7 @@ h2::before {
     height: 3px;
     width: 2rem;
     background-color: $color-primary;
-    margin-bottom: 0.5rem;
+    margin: 1rem 0 0.5rem;
 }
 
 h2 {

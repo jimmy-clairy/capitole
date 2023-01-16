@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Le restaurant Le Capitoul">
-    <link rel="stylesheet" href="./sass/styleAutoprefixer.css">
+    <link rel="stylesheet" href="./sass/style.css">
     <title>Le Capitoul</title>
     <script src="script.js" defer></script>
 </head>
@@ -37,111 +37,111 @@
 
     <!-- MAIN -->
     <main class="main">
-            <article class="article article__left">
-                <div class="article__img-border">
-                    <img src="./img/compressed/burger.webp" alt="Burger" height="425" width="350">
-                </div>
-                <div class="body">
-                    <h2>Discover</h2>
-                    <h3>Notre gastronomie</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quibusdam illum optio praesentium nisi blanditiis vel quidem. Mollitia unde delectus, cupiditate quam nobis error? Mollitia enim nemo deserunt optio corporis!</p>
-                    <a href="pages/recipe1.html" class="more">Recette 1</a>
-                </div>
-            </article>
-            <article class="article article__right">
-                <div class="article__img-border">
-                    <img src="./img/compressed/crusted-chicken.webp" alt="Crusted chicken" height="425" width="350">
-                </div>
-                <div class="body">
-                    <h2>Tasteful</h2>
-                    <h3>Recettes faites avec amour</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, autem vitae, quaerat vel reprehenderit eius dignissimos mollitia esse placeat aspernatur ut? Delectus exercitationem tempore, ipsa quis dolorum magnam reiciendis</p>
-                    <a href="pages/recipe1.html" class="more">Recette 1</a>
-                </div>
-            </article>
+        <article class="article">
+            <div class="article__img-border">
+                <img class="article__img" src="./img/compressed/burger.webp" alt="Burger" width="636" height="772">
+            </div>
+            <div class="article__body">
+                <h2 class="article__heading-top">Discover</h2>
+                <h3 class="article__heading">Notre gastronomie</h3>
+                <p class="article__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quibusdam illum optio praesentium nisi blanditiis vel quidem. Mollitia unde delectus, cupiditate quam nobis error? Mollitia enim nemo deserunt optio corporis!</p>
+                <a href="pages/recipe1.html" class="more">Recette 1</a>
+            </div>
+        </article>
+        <article class="article">
+            <div class="article__img-border">
+                <img class="article__img" src="./img/compressed/crusted-chicken.webp" alt="Crusted chicken" height="425" width="350">
+            </div>
+            <div class="article__body">
+                <h2 class="article__heading-top">Tasteful</h2>
+                <h3 class="article__heading">Recettes faites avec amour</h3>
+                <p class="article__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, autem vitae, quaerat vel reprehenderit eius dignissimos mollitia esse placeat aspernatur ut? Delectus exercitationem tempore, ipsa quis dolorum magnam reiciendis</p>
+                <a href="pages/recipe1.html" class="more">Recette 1</a>
+            </div>
+        </article>
 
-            <!-- MENU -->
-            <article class="article article__center" id="menu">
-                <div>
-                    <h2>Menu</h2>
-                    <h3>Certified bio</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, autem vitae, quaerat vel reprehenderit eius dignissimos mollitia esse placeat aspernatur ut? Delectus exercitationem tempore, ipsa quis dolorum magnam reiciendis</p>
-                </div>
-            </article>
+        <!-- MENU -->
+        <article class="article-center" id="menu">
+            <div class="article-center__container">
+                <h2 class="article-center__heading-top">Menu</h2>
+                <h3 class="article-center__heading">Certified bio</h3>
+                <p class="article-center__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, autem vitae, quaerat vel reprehenderit eius dignissimos mollitia esse placeat aspernatur ut? Delectus exercitationem tempore, ipsa quis dolorum magnam reiciendis</p>
+            </div>
+        </article>
 
-            <!-- MID NAV -->
-            <div class="mid__nav">
-                <a href="#menu">Eggs</a>
-                <a href="#menu">Porc</a>
-                <a href="#menu">Chicken</a>
-                <a href="#menu">Fish</a>
-                <a href="#menu">Vega</a>
+        <!-- MID NAV -->
+        <nav class="mid-nav">
+            <a class="mid-nav__link" href="#menu">Eggs</a>
+            <a class="mid-nav__link" href="#menu">Porc</a>
+            <a class="mid-nav__link" href="#menu">Chicken</a>
+            <a class="mid-nav__link" href="#menu">Fish</a>
+            <a class="mid-nav__link" href="#menu">Vega</a>
+        </nav>
+
+        <!-- MULTI MENU -->
+        <div class="multi-menu">
+            <!-- LITTLE MENU -->
+            <div class="multi-menu__container ">
+                <img class="multi-menu__img" src="./img/compressed/crusted-chicken-square.webp" alt="Crusted Chicken" height="160" width="160">
+                <div class="multi-menu__body">
+                    <h4 class="multi-menu__heading">Amazing Crusted Chicken</h4>
+                    <p class="multi-menu__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio consectetur, dolores sequi laboriosa ducimus</p>
+                    <div class="multi-menu__price">$20</div>
+                </div>
             </div>
 
-            <!-- MULTI MENU -->
-            <div class="multi__menu">
-                <!-- LITTLE MENU -->
-                <div class="little__menu ">
-                    <img src="./img/compressed/crusted-chicken-square.webp" alt="Crusted Chicken" height="160" width="160">
-                    <div class="body">
-                        <h4>Amazing Crusted Chicken</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio consectetur, dolores sequi laboriosa ducimus</p>
-                        <div class="price">$20</div>
-                    </div>
+            <div class="multi-menu__container ">
+                <img class="multi-menu__img" src="./img/compressed/poisson-square.webp" alt="Poisson" height="160" width="160">
+                <div class="multi-menu__body">
+                    <h4 class="multi-menu__heading">Amazing Fish</h4>
+                    <p class="multi-menu__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio consectetur, dolores sequi laboriosa ducimus</p>
+                    <div class="multi-menu__price">$24</div>
                 </div>
-
-                <div class="little__menu ">
-                    <img src="./img/compressed/poisson-square.webp" alt="Poisson" height="160" width="160">
-                    <div class="body">
-                        <h4>Amazing Fish</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio consectetur, dolores sequi laboriosa ducimus</p>
-                        <div class="price">$24</div>
-                    </div>
-                </div>
-
-                <div class="little__menu ">
-                    <img src="./img/compressed/paella-square.webp" alt="Paella" height="160" width="160">
-                    <div class="body">
-                        <h4>Amazing Paella</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio consectetur, dolores sequi laboriosa ducimus</p>
-                        <div class="price">$15</div>
-                    </div>
-                </div>
-
-                <div class="little__menu ">
-                    <img src="./img/compressed/bobun-light-square.webp" alt="Bobun light" height="160" width="160">
-                    <div class="body">
-                        <h4>Amazing Bobun Light</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio consectetur, dolores sequi laboriosa ducimus</p>
-                        <div class="price">$18</div>
-                    </div>
-                </div>
-
-                <!-- POLYGON -->
-                <div class="polygon"></div>
             </div>
-            
-            <!-- ARTICLE END -->
-            <article class="article article__end">
-                <img src="./img/compressed/chief.webp" alt="photo du chef cuisinier" width="404" height="539">
-                <div class="article__body">
-                    <h2 id="chef">Chef</h2>
-                    <h3>MEET OUR EXECUTIVE CHEF, CHRISTIAN JACOB</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, neque dolor minus praesentium ducimus possimus deleniti recusandae aspernatur odio quibusdam, voluptates atque, dolore minima sunt eaque tenetur omnis eius libero.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ratione similique vel necessitatibus eaque consequuntur laudantium numquam accusamus asperiores veritatis.</p>
-                    <a href="#chef" class="more">See the Cooks</a>
+
+            <div class="multi-menu__container ">
+                <img class="multi-menu__img" src="./img/compressed/paella-square.webp" alt="Paella" height="160" width="160">
+                <div class="multi-menu__body">
+                    <h4 class="multi-menu__heading">Amazing Paella</h4>
+                    <p class="multi-menu__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio consectetur, dolores sequi laboriosa ducimus</p>
+                    <div class="multi-menu__price">$15</div>
                 </div>
-            </article>
+            </div>
+
+            <div class="multi-menu__container ">
+                <img class="multi-menu__img" src="./img/compressed/bobun-light-square.webp" alt="Bobun light" height="160" width="160">
+                <div class="multi-menu__body">
+                    <h4 class="multi-menu__heading">Amazing Bobun Light</h4>
+                    <p class="multi-menu__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odio consectetur, dolores sequi laboriosa ducimus</p>
+                    <div class="multi-menu__price">$18</div>
+                </div>
+            </div>
+
+            <!-- POLYGON -->
+            <div class="polygon"></div>
+        </div>
+        
+        <!-- ARTICLE END -->
+        <article class="article article-end">
+            <img class="article-end__img" src="./img/compressed/chief.webp" alt="photo du chef cuisinier" width="404" height="539">
+            <div class="article-end__body">
+                <h2 class="article-end__heading-top">Chef</h2>
+                <h3 class="article-end__heading">MEET OUR EXECUTIVE CHEF, CHRISTIAN JACOB</h3>
+                <p class="article-end__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, neque dolor minus praesentium ducimus possimus deleniti recusandae aspernatur odio quibusdam, voluptates atque, dolore minima sunt eaque tenetur omnis eius libero.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ratione similique vel necessitatibus eaque consequuntur laudantium numquam accusamus asperiores veritatis.</p>
+                <a href="./img/chief.jpg" class="article-end__link more">See the Cooks</a>
+            </div>
+        </article>
     </main>
 
     <!-- RESERVATION -->
     <section class="reservation" id="reservation">
-        <h2>Reservation</h2>
-        <h3>Make Reservation</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam repellendus dolorum accusamus sint magnam enim aspernatur, qui blanditiis.</p>
-        <form>
-            <div class="inputs">
-                <input type="text" name="fullname" placeholder="Full name">
-                <select name="persons">
+        <h2 class="reservation__heading-top">Reservation</h2>
+        <h3 class="reservation__heading">Make Reservation</h3>
+        <p class="reservation__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam repellendus dolorum accusamus sint magnam enim aspernatur, qui blanditiis.</p>
+        <form class="form">
+            <div class="form__inputs">
+                <input class="form__input-1" type="text" name="fullname" placeholder="Full name">
+                <select class="form__select" name="persons">
                     <option value="1">For 1 person</option>
                     <option value="2">For 2 persons</option>
                     <option value="3">For 3 persons</option>
@@ -149,18 +149,18 @@
                     <option value="5">For 5 persons</option>
                     <option value="6">For 6 persons</option>
                 </select>
-                <input type="date" name="date" value="2022-11-25" aria-label="date">
+                <input class="form__input-2" type="date" name="date" value="2022-11-25" aria-label="date">
             </div>
-            <button>Reserve table</button>
+            <button class="form__btn">Reserve table</button>
         </form>
     </section>
     
     <!-- RECIPES -->
     <section class="recipes" id="recipes">
         <header class="recipes__header">
-            <h2>Recipes</h2>
-            <h3>We share our recipes with you</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptatem minima aperiam magnam non ut reiciendis rerum praesentium nobis aliquam</p>
+            <h2 class="recipes__heading-top">Recipes</h2>
+            <h3 class="recipes__heading">We share our recipes with you</h3>
+            <p class="recipes__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptatem minima aperiam magnam non ut reiciendis rerum praesentium nobis aliquam</p>
         </header>
         <div class="recipes__body">
             <div class="recipes__event">
