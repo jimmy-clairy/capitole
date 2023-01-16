@@ -1,0 +1,19 @@
+{
+  "name": "restaurant_le_capitoul",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimmy-clairy/restaurant_le_capitoul.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimmy-clairy/restaurant_le_capitoul/issues"
+  },
+  "homepage": "https://github.com/jimmy-clairy/restaurant_le_capitoul#readme"
+}
