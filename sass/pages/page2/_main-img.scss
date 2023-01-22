@@ -1,13 +1,13 @@
 .page-2 .main-img {
     background:
     linear-gradient(180deg, rgba($color-black,0.9), rgba($color-black, 0.6) 40%, rgba($color-black, 0.1)),
-    url('../img/compressed/800w/salad-chicken.webp') center / cover;
+    url('../pictures/compressed/800w/salad-chicken.webp') center / cover;
 }
 
 @media screen and (min-width:920px) {
     .page-2 .main-img {
         background:
         linear-gradient(180deg, rgba($color-black,0.9), rgba($color-black, 0.6) 40%, rgba($color-black, 0.1)),
-        url('../img/compressed/salad-chicken.webp') center / cover;
+        url('../pictures/compressed/salad-chicken.webp') center / cover;
     }
 }
