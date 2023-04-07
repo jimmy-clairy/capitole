@@ -13,3 +13,14 @@
 
 @import "./pages/page2/main-img";
 @import "./pages/page2/main";
+
+.reveal {
+    opacity: 0;
+    transform: translateY(5rem);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s;
+}

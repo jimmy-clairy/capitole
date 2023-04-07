@@ -290,7 +290,7 @@ p {
 .main-img {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.1)), url("../pictures/compressed/800w/eggs.webp") center/cover;
   color: #f1f1f1;
-  padding: 8rem 0 4rem;
+  padding: 12rem 0 8rem;
   text-align: center;
   letter-spacing: 0.3rem;
 }
@@ -313,7 +313,7 @@ p {
 @media screen and (min-width: 920px) {
   .main-img {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0)), url("../pictures/compressed/eggs.webp") center/cover;
-    padding: 10rem 0 8rem;
+    padding: 14rem 0 12rem;
   }
   .main-img__p1 {
     font-size: 5rem;
@@ -572,6 +572,17 @@ p {
   width: 100%;
   min-height: 12.5rem;
   border: #c59348 1px solid;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(5rem);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
 }
 
 /*# sourceMappingURL=style.css.map */

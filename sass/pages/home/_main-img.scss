@@ -1,15 +1,15 @@
 .main-img {
     background:
-    linear-gradient(180deg, rgba($color-black,0.7), rgba($color-black, 0.1) 40%, rgba($color-black, 0.1)),
-    url('../pictures/compressed/800w/eggs.webp') center / cover;
+        linear-gradient(180deg, rgba($color-black, 0.7), rgba($color-black, 0.1) 40%, rgba($color-black, 0.1)),
+        url('../pictures/compressed/800w/eggs.webp') center / cover;
     color: $color-white;
 
-    padding: 8rem 0 4rem;
+    padding: 12rem 0 8rem;
     text-align: center;
     letter-spacing: 0.3rem;
 
     &__p1 {
-        font-family:$font-primary;
+        font-family: $font-primary;
         color: $color-primary;
         font-size: 3rem;
     }
@@ -21,7 +21,7 @@
         margin: 1.5rem 0;
     }
 
-    &__p2{
+    &__p2 {
         text-transform: uppercase;
         color: inherit;
     }
@@ -30,10 +30,11 @@
 @media screen and (min-width:920px) {
     .main-img {
         background:
-        linear-gradient(180deg, rgba($color-black,0.7), rgba($color-black, 0) 40%, rgba($color-black, 0)),
-        url('../pictures/compressed/eggs.webp') center / cover;
-        padding: 10rem 0 8rem;
-        &__p1{
+            linear-gradient(180deg, rgba($color-black, 0.7), rgba($color-black, 0) 40%, rgba($color-black, 0)),
+            url('../pictures/compressed/eggs.webp') center / cover;
+        padding: 14rem 0 12rem;
+
+        &__p1 {
             font-size: 5rem;
         }
 
