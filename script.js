@@ -10,7 +10,7 @@ function toggleNav() {
     navigation.classList.toggle("active")
 }
 
-const ratio = .4
+const ratio = .2
 const options = {
     root: null,
     rootMargin: "0px",
